@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(202, 201, 201);
+}
+
+:root{
+    --font-fa: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo{
+    font-size: 40px;
+    text-align: center;
+    font-family: var(--font-fa);
+    margin: 30px;
+}
+
+img{
+    width: 200px;
+    border: 2px solid rgb(105, 209, 175);
+}
+
+p{
+    font-family: var(--font-fa);
+}
+
+.btn{
+    font-family: var(--font-fa);
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 40px;
+    background-color: rgb(105, 209, 175);
+    cursor: pointer;
+}

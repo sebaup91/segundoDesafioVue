@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Catalogo</title>
+</head>
+<body>
+    <div id="app">
+        <header-component :titulo="'Bartender World'" :class="cssApp"></header-component>
+        <card-component :titulo="titulo" :portada="portada" :costo="costo"></card-component>
+        <main-cards v-for="(platos, index) of codermeals"
+                    :titulo="platos.titulo"
+                    :portada="platos.portada"
+                    :costo="platos.costo">
+        </main-cards>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
